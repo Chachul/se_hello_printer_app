@@ -13,3 +13,8 @@ script:
   - make lint
   - make docker_build
   - make docker_push
+
+deploy:
+  provider: heroku
+  app: radiant-eyrie-13493
+  api_key: ${HEROKU_API_KEY}
