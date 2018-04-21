@@ -32,6 +32,6 @@ TAG=$(USERNAME)/$(MY_DOCKER_NAME)
 
 docker_push:
 			@docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}; \
-			docker tag $(MY_DOCKER_NAME) $(TAG): \
+			docker tag $(MY_DOCKER_NAME) $(TAG); \
 			docker push $(TAG); \
 			docker logout;
