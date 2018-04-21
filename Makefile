@@ -30,7 +30,7 @@ docker_run: docker_build
 USERNAME=chachul
 TAG=$(USERNAME)/$(MY_DOCKER_NAME)
 
-docker_push: docker_build
+docker_push:
 			@docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}; \
 			docker tag $(MY_DOCKER_NAME) $(TAG): \
 			docker push $(TAG); \
