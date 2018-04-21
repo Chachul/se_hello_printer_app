@@ -30,5 +30,3 @@ docker_push: docker_build
 			docker tag hello-world-printer $(TAG): \
 			docker push $(TAG); \
 			docker logout;
-
-DOCKER_PASSWORD=nbhujk make docker_push
