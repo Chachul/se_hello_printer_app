@@ -14,8 +14,17 @@ lint:
 test:
 		PYTHONPATH=. py.test  --verbose -s
 
+test_cov:
+		PYTHONPATH=. py.test  --verbose -s --cov=.
+
+test_xunit:
+		PYTHONPATH=. py.test  -s --cov=. --junit-xml=test_results.xml
+
 run:
 		PYTHONPATH=. FLASK_APP=hello_world flask run
+
+test_smoke:
+		curl --fail 127.0.0.1:5000
 
 docker_build:
 		docker build -t $(MY_DOCKER_NAME) .
