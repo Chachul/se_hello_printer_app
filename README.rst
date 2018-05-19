@@ -1,3 +1,9 @@
+.. image:: https://travis-ci.org/Chachul/se_hello_printer_app.svg?branch=master
+   :target: https://travis-ci.org/Chachul/se_hello_printer_app     
+.. image:: https://app.statuscake.com/button/index.php?Track=dc6RNhbc2F&Days=1&Design=6
+     :target: https://www.statuscake.com
+
+
 Simple Flask App
 ================
 
@@ -36,7 +42,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
     source /usr/bin/virtualenvwrapper.sh # nie trzeba, jeśli już w .bashrc
     workon wsb-simple-flask-app
-
 
 - Integracja z TravisCI:
 
